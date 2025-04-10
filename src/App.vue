@@ -1,26 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="max-w-2xl mx-auto p-4">
+    <h1 class="text-3xl font-bold mb-4">Fitness Tracker</h1>
+    <WorkoutForm />
+    <WorkoutList />
+    <ProgressChart />
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import WorkoutForm from './components/WorkoutForm.vue'
+import WorkoutList from './components/WorkoutList.vue'
+import ProgressChart from './components/ProgressChart.vue'
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
